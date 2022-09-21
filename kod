@@ -1,1 +1,20 @@
+from random import randint
 
+
+# for i in range (1):
+#     print(randint(1,10))
+
+odds = randint (1,10)
+answer = -1
+i = 0 #liczy prób zgadnięcia
+
+print("Zgadnij liczbę z przedziału 1-10")
+
+while answer != odds:
+    i+=1
+    answer = int(input('Podaj liczbę: '))
+    if answer > odds:
+        print ("Wylosowana liczba jest mniejsza")
+    elif answer < odds:
+        print ("Wylosowana liczba jest większa")
+print('Brawo! Potzebowałeś/-aś', i, 'prób')
