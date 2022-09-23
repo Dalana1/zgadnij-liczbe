@@ -17,4 +17,8 @@ while answer != odds:
         print ("Wylosowana liczba jest mniejsza")
     elif answer < odds:
         print ("Wylosowana liczba jest większa")
+if odds/2 == True:
+    print("wylosowana liczba jest parzysta") 
+if odds/2 == False:
+    print("Wylosowana liczba jest nieparzysta")
 print('Brawo! Potzebowałeś/-aś', i, 'prób')
