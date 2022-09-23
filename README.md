@@ -11,4 +11,5 @@ ZAŁOŻENIA - podejscie 1:
 
 
 ZAŁOŻENIA - podejscie 2:
-1. Czy wybrana liczba jest liczbą parzystą/podzielną przez 3
+1. Czy wybrana liczba jest liczbą parzystą lub nieparzystą  - zrobione
+2. Realizacja na stronie internetowej 
