@@ -1,0 +1,42 @@
+plik = open('text.txt', 'r')
+# print (plik.read()) #wyświetli tekst
+
+tekst = plik.read()
+plik.close()
+#otworzy teskt, przeczta i zamknie ale mozemy go analizowac bez wyswietlania
+
+#print(tekst)
+
+def policz(txt, znak):
+    licznik = 0
+    for z in txt:
+        if z == znak:
+            licznik += 1
+    return licznik
+
+print(policz(tekst, "a"))
+print(policz(tekst.lower(), "a")) #zliczy wszystkie A i a teraz
+
+
+
+
+#analiza wystapien liter z procentowym udziałem
+
+tekst2 = tekst.strip(" ")
+print(tekst2)
+ile = 0
+print("długość tekst:", len(tekst), "długość tekst2:", len(tekst2))
+
+proc = []
+proc2 = 0
+
+
+for z in "abcdefghijklmnoprstuwxyz":
+    ile = policz(tekst.lower(),z)
+    procent = 100 * ile / len(tekst2)
+    print ("{0} - {1} - {2}%".format(z.upper(), ile, round(procent, 2)))
+    proc.append(procent)
+    
+
+
+print(sum(proc))
